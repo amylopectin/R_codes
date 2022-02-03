@@ -7,8 +7,8 @@ A<- ggplot(data=case1) +
   labs(x="Treatment", y="Average grain weight") +
   theme(axis.title.x=element_text (family="serif", face="plain", size=20, color="Black", margin= margin(t=10, r=5, b=0, l=0)),
         axis.title.y=element_text (family="serif", face="plain", size=20, color="Black", margin= margin(t=10, r=5, b=0, l=0)),
-        axis.text.x= element_blank(),
-        axis.text.y= element_blank(),
+        axis.text.x=element_text (family="serif", face="plain", size=20, color="Black", margin= margin(t=10, r=5, b=0, l=0)),
+        axis.text.y=element_text (family="serif", face="plain", size=20, color="Black", margin= margin(t=10, r=5, b=0, l=0)),
         axis.line= element_line(size=0.5, colour="Black"),
         legend.position = "none",
         legend.key= element_rect(color=NULL, fill=alpha("grey",.15)), 
