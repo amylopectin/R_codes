@@ -1,0 +1,20 @@
+ggplot (Data_Name, aes (x=value)) + 
+  stat_function (fun=dnorm, args=c(mean=mean(Data_Name$value), sd=sd(Data_Name$value)))
+  scale_x_continuous(breaks= seq(0,80,10), limits= c(0,80)) + 
+  scale_y_continuous(breaks= seq(0,0.05,0.01), limits= c(0,0.05))+
+    
+  labs(x=‘x-axis name’, y=‘y-axis name’) + 
+  theme(axis.title.x= element_text (face= "plain", size= 15, color= "black", 
+                                    margin= margin(t=0, r=0, b=0, l=0)),
+        axis.title.y= element_text (face= "plain", size= 15, color= "black", 
+                                    margin= margin(t=0, r=0, b=0, l=0)),
+        axis.text.x= element_text(size= 15, margin= margin(t=0, r=0, b=10, l=0)),
+        axis.text.y= element_text(size= 15, margin= margin(t=0, r=0, b=0, l=10)),
+        axis.line= element_line(size = 0.5, colour= "black"),
+        legend.position= 'bottom',
+        legend.key= element_rect(color= "white", fill= "white"), 
+        legend.key.size= unit(0.5,"cm"),
+        legend.title= element_text(face= "plain", size= 14, color= "Black"),
+        legend.text= element_text(face= "plain", size= 14, color= "Black"),
+        plot.margin=unit(c(0,0,0,0),"cm")) +
+    windows(width=5.5, height=5)
