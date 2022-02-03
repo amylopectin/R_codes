@@ -1,0 +1,25 @@
+ggplot(data=Data_name, aes(x=X_NAME, y= Y_NAME)) + 
+  geom_point(aes(fill=, shape=),size=1.5, stroke = 1) +
+  geom_smooth(aes(fill=, color=), method= lm, level=0.95, se=TRUE, linetype=1, size=0.5, formula= y ~ x) +
+  
+  #Equation
+  stat_poly_eq(aes(label= paste(..eq.label.., sep= "~~~")), 
+               label.x.npc= 0.05, label.y.npc= 0.7,
+               eq.with.lhs= "italic(hat(y))~'='~", eq.x.rhs= "~italic(x)", 
+               coef.digits= 3, formula = y ~ x, parse= TRUE, size=2) 
+
+# R-squared 
+stat_poly_eq(aes(label= paste(..rr.label.., sep = "~~~")), 
+             label.x.npc= 0.1, label.y.npc= 0.75, rr.digits=3, 
+             formula= y ~ x, parse= TRUE, size= 5)
+
+# Adjusted R-squared 
+stat_poly_eq(aes(label = paste(..adj.rr.label.., sep = "~~~")), 
+             label.x.npc = 0.9, label.y.npc = 0.65, rr.digits=2, 
+             formula = y ~ x, parse = TRUE, size = 6) +
+  
+# Per group
+  stat_poly_eq(data=subset(DATANAME, Variable Name==""), aes(label= paste(..eq.label.., sep= "~~~")), 
+               label.x.npc= 0.05, label.y.npc= 0.7,
+               eq.with.lhs= "italic(hat(y))~'='~", eq.x.rhs= "~italic(x)", 
+               coef.digits= 3, formula = y ~ x, parse= TRUE, size=2)  
