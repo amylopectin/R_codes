@@ -1,0 +1,12 @@
+install.packages("readxl")
+install.packages("ggplot2")
+install.packages("ggpmisc")
+install.packages("ggrepel")
+install.packages("plyr")
+
+library(readxl)
+library(ggplot2)
+library(ggpmisc)
+library(ggrepel)
+library(plyr)
+library(agricolae)
