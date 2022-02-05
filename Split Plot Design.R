@@ -1,0 +1,11 @@
+
+
+
+
+
+#split-split plot design
+
+install.packages("agricolae")
+library(agricolae)
+
+ssp.plot(Block, Main_plt, sub_plot, tertiary_plot, Yield)
