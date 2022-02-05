@@ -3,6 +3,8 @@ install.packages("ggplot2")
 install.packages("ggpmisc")
 install.packages("ggrepel")
 install.packages("plyr")
+install.packages("dplyr")
+
 
 library(readxl)
 library(ggplot2)
@@ -10,3 +12,4 @@ library(ggpmisc)
 library(ggrepel)
 library(plyr)
 library(agricolae)
+library(dplyr)
