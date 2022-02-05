@@ -1,8 +1,4 @@
 
-
-
-
-
 #split-split plot design
 
 install.packages("agricolae")
