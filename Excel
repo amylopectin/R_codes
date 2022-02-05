@@ -1,4 +1,5 @@
 install.packages("readxl")
 library(readxl)
-Name<- read_excel ("Excel name.xlsx", sheet=1)
+
+DataA<- read_excel ("Summary.xlsx", sheet=1)
 
