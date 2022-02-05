@@ -1,0 +1,14 @@
+<<<<<<< HEAD:Split Plot Design.R
+
+=======
+>>>>>>> 40c1972fcdcb1d1cbbf90a0f4264b083d11a3c65:Split Plot Design
+#split-split plot design
+
+install.packages("agricolae")
+library(agricolae)
+
+<<<<<<< HEAD:Split Plot Design.R
+ssp.plot(Block, Main_plt, sub_plot, tertiary_plot, Yield)
+=======
+with(Data_name,ssp.plot(Block, Main_plt, sub_plot, tertiary_plot, y_value))
+>>>>>>> 40c1972fcdcb1d1cbbf90a0f4264b083d11a3c65:Split Plot Design
