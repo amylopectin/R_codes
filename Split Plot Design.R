@@ -8,4 +8,4 @@
 install.packages("agricolae")
 library(agricolae)
 
-ssp.plot(Block, Main_plt, sub_plot, tertiary_plot, Yield)
+with(Data_name,ssp.plot(Block, Main_plt, sub_plot, tertiary_plot, y_value))
